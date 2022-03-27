@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan", "HandyMan.csproj", "{47CAB977-EF82-415D-B4BB-A18CADB319BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Business", "..\HandyMan.Business\HandyMan.Business.csproj", "{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Data", "..\HandyMan.Data\HandyMan.Data.csproj", "{B94917D8-14EF-4ADD-868E-08984868EBCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.ViewModel", "..\HandyMan.ViewModel\HandyMan.ViewModel.csproj", "{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Repository", "..\HandyMan.Repository\HandyMan.Repository.csproj", "{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Enums", "..\HandyMan.Enums\HandyMan.Enums.csproj", "{A43C1097-82A8-4EB9-99A9-96F0348F8E05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47CAB977-EF82-415D-B4BB-A18CADB319BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CAB977-EF82-415D-B4BB-A18CADB319BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CAB977-EF82-415D-B4BB-A18CADB319BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CAB977-EF82-415D-B4BB-A18CADB319BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94917D8-14EF-4ADD-868E-08984868EBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94917D8-14EF-4ADD-868E-08984868EBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94917D8-14EF-4ADD-868E-08984868EBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94917D8-14EF-4ADD-868E-08984868EBCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43C1097-82A8-4EB9-99A9-96F0348F8E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43C1097-82A8-4EB9-99A9-96F0348F8E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43C1097-82A8-4EB9-99A9-96F0348F8E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43C1097-82A8-4EB9-99A9-96F0348F8E05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8D79DAB-4110-4682-AB7E-544CED6A5460}
+	EndGlobalSection
+EndGlobal
