@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/SideBarMenu.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HandyMan.styles.css" asp-append-version="true" />
+    <link href="~/css/custom-table.css" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/node_modules/@coreui/coreui/dist/css/coreui.min.css")" type="text/css" rel="stylesheet">
+     @await RenderSectionAsync("Stylesheets", false)
 </head>
 <body>
     <header>
