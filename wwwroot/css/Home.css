@@ -1,0 +1,51 @@
+﻿
+
+.Container {
+    text-align: center;
+    position: relative;
+}
+
+.form-title {
+    font-weight: normal;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.form-subtitle {
+    font-weight: normal;
+    font-size: 45px;
+}
+
+.form-description {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-tittle, .welcome-sub-title, .welcome-description {
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .image-width {
+        width: 60%;
+    }
+
+    .welcome-tittle {
+        font-size: 45px;
+    }
+
+    .welcome-sub-title {
+        font-size: 35px;
+    }
+
+    .welcome-description {
+        font-size: 25px;
+    }
+}

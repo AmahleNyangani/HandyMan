@@ -1,0 +1,19 @@
+﻿@media only screen and (max-width: 768px) {
+    .small-device-footer {
+        display: block !important;
+    }
+
+    .large-device-footer {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .small-device-footer {
+        display: none !important;
+    }
+
+    .large-device-footer {
+        display: block !important;
+    }
+}
