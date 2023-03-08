@@ -17,3 +17,9 @@
         display: block !important;
     }
 }
+.footer {
+    text-align: center;
+    background: #fafafa;
+    color: white;
+    font-size: 1em;
+}

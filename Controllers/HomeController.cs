@@ -22,6 +22,7 @@ namespace HandyMan.Controllers
 
         public IActionResult Privacy()
         {
+          
             return View();
         }
         public ActionResult GetUsers()

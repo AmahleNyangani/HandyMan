@@ -15,17 +15,15 @@ body {
 
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 350;
     color: #8a8a88;
     background: #fafafa;
 }
 
-.title {
-    width: 50%;
-    margin-bottom: 4rem;
-    font-size: 1.7rem;
+.main {
+    margin-left: 200px;
+    padding: 10px;
 }
-
 .container {
     position: relative;
     margin-left: auto;
@@ -40,14 +38,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
-.main {
-    width: 50%;
-    height: 50%;
-}
-
 .form-control {
     padding: 0.5rem;
     width: 250px;
     margin: 1rem 0rem;
+}
+.welcome-tittle, .welcome-sub-title, .welcome-description {
+    text-align: center;
 }
