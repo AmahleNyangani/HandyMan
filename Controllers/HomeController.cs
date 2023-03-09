@@ -3,6 +3,7 @@ using HandyMan.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Text.Json;
+using HandyMan.ViewModel;
 
 namespace HandyMan.Controllers
 {
@@ -25,11 +26,20 @@ namespace HandyMan.Controllers
           
             return View();
         }
-        public ActionResult GetUsers()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddUser(UsersViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+
+            }
+        }
+            public ActionResult GetUsers()
         {
             var business = new UsersBusiness();
-            var user = business.GetUsers();
-            return Json(JsonSerializer.Serialize(user));
+            var model = business.GetUsers();
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

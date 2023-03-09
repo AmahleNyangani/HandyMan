@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HandyMan.ViewModel.UsersViewModel
+@{
     ViewBag.Title = "Home Page";  
 }
 
@@ -9,16 +10,52 @@
                 <i class="fa fa-home"> You Are At Home</i>
             </div>
             <div class="card-body">
-                <div class="Container">
-                 
-                    <h1 class="form-title welcome-tittle">
-                        Welcome
-                    </h1>
-                    <h1 class="form-subtitle welcome-sub-title">
-                        To Lindoh's Planet
-                    </h1>
+                <form id="formValidation" submit="checkForm" action="@Url.Action("AddUser","Home")" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        @Html.HiddenFor(model => model.id)
+                        
+                        <div class="form-horizontal">
+                            
 
-                </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.surname, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.idNumber, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.idNumber, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.position, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.position, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.address, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.startDate, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.startDate, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                <button id="submitButton" type="submit" class="btn btn-primary">Save <i class="fa fa-edit"></i></button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
             </div>
 
         </div>
