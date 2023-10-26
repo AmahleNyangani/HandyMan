@@ -2,41 +2,36 @@
       <h2>HandyMan</h2>
       <ul class="nav">
         <li>
-          <a href="#"> <i class="fas fa-server"></i> <span>Dashboard</span></a>
+          <a href="@Url.Action("Index", "Home")"> <i class="fas fa-server"></i> <span>Dashboard</span></a>
         </li>
         <li>
        <div class="dropdown-menu">
                <a href=" "> <i class="fas fa-concierge-bell"></i> <span>Services</span> </a> 
                 <div class="dropdown-content">
                 <ul>
-                    <li><a  href="@Url.Action("GetUsers", "Home")">Electrictians</a></li>
-                    <li><a  href="#">Plumbers</a></li>
-                    <li><a  href="#">Painter</a></li>
-                    <li><a  href="#">Nannies</a></li>
-                    <li><a  href="#">Gardners</a></li>
-                    <li><a  href="#">Tutors</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
-                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Electrician" })">Electricians</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Plumber" })">Plumbers</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Painter" })">Painters</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Gardner" })">Gardners</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Grass Cutter" })">Grass Cutters</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Tutor" })">Tutors</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "House Keeper" })">House Keepers</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Mechanic" })">Mechanic</a></li>
+                    <li><a  href="@Url.Action("GetUsers", "Home", new { type = "Welder" })">Welding</a></li>
                 </ul>
                 </div>
         </div>
         </li>
         <li>
-          <a href="#"> <i class="fa fa-undo" aria-hidden="true"></i> <span>Setting</span> </a>
+          <a href="#"> <i class="fa fa-undo" aria-hidden="true"></i> <span>View History</span> </a>
         </li>
         <li>
-          <a href="@Url.Action("GetUserById", "Home")"> <i class="fas fa-question-circle"></i> <span>About</span> </a>
+          <a href="@Url.Action("AddUser", "Home")"> <i class="fas fa-question-circle"></i> <span>About</span> </a>
         </li>
         <li>
           <a href="#"> <i class="fas fa-address-card"></i> <span>Contact</span></a>
         </li>
+
 
       </ul>
     </div>

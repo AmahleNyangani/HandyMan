@@ -5,14 +5,20 @@
 
 
 <main class="main">
+
+       <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-home"> Service Providers</i>
+            </div>
       <div id="page-content-wrapper">
        <div class="container-fluid">
             <div class="table table-hover">
                 <div class="row">
                     <div class="col-md-3 font-weight-bold d-none d-md-block">Name</div>
                     <div class="col-md-3 font-weight-bold d-none d-md-block">Surname</div>
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Position</div>
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Occupation</div>
+                    <div class="col-md-3 font-weight-bold d-none d-md-block">E-mail</div>
+                    <div class="col-md-3 font-weight-bold d-none d-md-block">Service</div>
 
                 </div>
                       @if (Model.Any())
@@ -27,10 +33,10 @@
                                 @details.surname
                             </div>
                             <div class="col-md-3">
-                                @details.occupation
+                                @details.email
                             </div>
                             <div class="col-md-3">
-                              @details.position
+                              @details.occupation
                             </div>
 
                         </div>
@@ -39,4 +45,5 @@
             </div>
          </div>
       </div>
+   </div>
 </main>

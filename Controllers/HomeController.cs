@@ -32,20 +32,31 @@ namespace HandyMan.Controllers
         {
             var business = new UsersBusiness();
             business.AddUser(model);
-            return View();
+            return RedirectToAction("Index", "Home");
         }
-            public ActionResult GetUsers()
+            public ActionResult GetUsers(string type)
         {
             var business = new UsersBusiness();
-            var model = business.GetUsers();
-            return View(model);
+            var users = business.GetUsers(type);
+            return View(users);
         }
         public ActionResult GetUserById(int id)
         {
             var business = new UsersBusiness();
-            var model = business.GetUserById(id);
-            return View(model);
+            var user = business.GetUserById(id);
+            return View(user);
         }
+        public ActionResult EditUser(int userId)
+        {
+            var user = new UsersBusiness().GetUserById(userId);
+            return  View(user);
+        }
+        public ActionResult UpdateUser(UsersViewModel model)
+        {
+            new UsersBusiness().UpdateUser(model);
+            return RedirectToAction("Index", "Home");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
