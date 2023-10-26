@@ -35,3 +35,28 @@
                 margin-left: 20px;
                 transition: 0.4s;
             }
+.dropdown-menu {
+    position: relative;
+    display:contents;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #2F4F4F;
+}
+
+    .dropdown-content a {
+        color: #ffffff;
+        padding: 0 30px;
+    }
+
+        .dropdown-content a:hover {
+            color: #000000;
+            margin-left: 20px;
+             transition: 0.4s;
+        }
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}

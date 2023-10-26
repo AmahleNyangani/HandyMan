@@ -5,15 +5,15 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan", "HandyMan.csproj", "{47CAB977-EF82-415D-B4BB-A18CADB319BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Business", "..\HandyMan.Business\HandyMan.Business.csproj", "{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan.Business", "..\HandyMan.Business\HandyMan.Business.csproj", "{83EE7286-26A5-4F1A-8B4F-3DFC7E2948CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Data", "..\HandyMan.Data\HandyMan.Data.csproj", "{B94917D8-14EF-4ADD-868E-08984868EBCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan.Data", "..\HandyMan.Data\HandyMan.Data.csproj", "{B94917D8-14EF-4ADD-868E-08984868EBCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.ViewModel", "..\HandyMan.ViewModel\HandyMan.ViewModel.csproj", "{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan.ViewModel", "..\HandyMan.ViewModel\HandyMan.ViewModel.csproj", "{72C54C49-1D90-4CE3-BF1C-5DCD07E2A619}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Repository", "..\HandyMan.Repository\HandyMan.Repository.csproj", "{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan.Repository", "..\HandyMan.Repository\HandyMan.Repository.csproj", "{31EAAC8E-6C40-4D6E-A9F1-62E1CE06C4FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMan.Enums", "..\HandyMan.Enums\HandyMan.Enums.csproj", "{A43C1097-82A8-4EB9-99A9-96F0348F8E05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandyMan.Enums", "..\HandyMan.Enums\HandyMan.Enums.csproj", "{A43C1097-82A8-4EB9-99A9-96F0348F8E05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

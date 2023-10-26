@@ -4,59 +4,23 @@
 }
 
 <main class="main">
+   
+   
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
                 <i class="fa fa-home"> You Are At Home</i>
             </div>
-            <div class="card-body">
-                <form id="formValidation" submit="checkForm" action="@Url.Action("AddUser","Home")" method="post">
-                    @Html.AntiForgeryToken()
-                    <div class="form-horizontal">
-                        @Html.HiddenFor(model => model.id)
-                        
-                        <div class="form-horizontal">
-                            
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.surname, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.idNumber, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.idNumber, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.position, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.position, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.address, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.startDate, htmlAttributes: new { @class = "font-weight-bold" })
-                                @Html.EditorFor(model => model.startDate, new { htmlAttributes = new { @class = "form-control"} })
-                            </div>
-
-                            <div class="form-group">
-                                <button id="submitButton" type="submit" class="btn btn-primary">Save <i class="fa fa-edit"></i></button>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
+        <div class="card-body">
+     <div class= "Container">
+                <!-- banner -->
+        <div class="banner">
+            <div class="text">Hello!!  Welcome To</div>
+            <div class="text">HandyMand</div>
+            <a href="#" class="banner-btn">Read more</a>
+        </div>
+       </div>
+    </div>
 
         </div>
     </div>

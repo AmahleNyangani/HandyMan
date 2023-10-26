@@ -1,43 +1,6 @@
-﻿@model HandyMan.ViewModel.UsersViewModel
-@{
+﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
 
-
-
-<main class="main">
-      <div id="page-content-wrapper">
-       <div class="container-fluid">
-            <div class="table table-hover">
-                <div class="row">
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Title</div>
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Name</div>
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Surname</div>
-                    <div class="col-md-3 font-weight-bold d-none d-md-block">Occupation</div>
-
-                </div>
-
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a class="text-decoration-none" href="#">
-                                    @Model.name
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                @Model.surname
-                            </div>
-                            <div class="col-md-3">
-                                <span class="badge badge-info">@Model.occupation</span>
-                            </div>
-                            <div class="col-md-3">
-                             <span class="badge badge-info">@Model.gender</span>
-                            </div>
-
-                        </div>
-             
-            </div>
-         </div>
-      </div>
-</main>
 
 

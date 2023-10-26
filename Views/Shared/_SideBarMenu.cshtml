@@ -5,19 +5,38 @@
           <a href="#"> <i class="fas fa-server"></i> <span>Dashboard</span></a>
         </li>
         <li>
-          <a href=" @Url.Action("GetUsers", "Home")"> <i class="fas fa-concierge-bell"></i> <span>Services</span> </a> 
-        </li>
-        <li>
-          <a href="#"> <i class="fas fa-calendar-alt"></i> <span>Events</span> </a>
+       <div class="dropdown-menu">
+               <a href=" "> <i class="fas fa-concierge-bell"></i> <span>Services</span> </a> 
+                <div class="dropdown-content">
+                <ul>
+                    <li><a  href="@Url.Action("GetUsers", "Home")">Electrictians</a></li>
+                    <li><a  href="#">Plumbers</a></li>
+                    <li><a  href="#">Painter</a></li>
+                    <li><a  href="#">Nannies</a></li>
+                    <li><a  href="#">Gardners</a></li>
+                    <li><a  href="#">Tutors</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                    <li><a  href="#">Latname</a></li>
+                </ul>
+                </div>
+        </div>
         </li>
         <li>
           <a href="#"> <i class="fa fa-undo" aria-hidden="true"></i> <span>Setting</span> </a>
         </li>
         <li>
-          <a href="#"> <i class="fas fa-question-circle"></i> <span>About</span> </a>
+          <a href="@Url.Action("GetUserById", "Home")"> <i class="fas fa-question-circle"></i> <span>About</span> </a>
         </li>
         <li>
           <a href="#"> <i class="fas fa-address-card"></i> <span>Contact</span></a>
         </li>
+
       </ul>
     </div>

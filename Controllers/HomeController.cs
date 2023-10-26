@@ -28,12 +28,11 @@ namespace HandyMan.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddUser(UsersViewModel model)
+        public IActionResult AddUser(UsersViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-
-            }
+            var business = new UsersBusiness();
+            business.AddUser(model);
+            return View();
         }
             public ActionResult GetUsers()
         {
@@ -41,7 +40,12 @@ namespace HandyMan.Controllers
             var model = business.GetUsers();
             return View(model);
         }
-
+        public ActionResult GetUserById(int id)
+        {
+            var business = new UsersBusiness();
+            var model = business.GetUserById(id);
+            return View(model);
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
