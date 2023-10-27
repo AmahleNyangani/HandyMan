@@ -40,12 +40,12 @@ namespace HandyMan.Controllers
             var users = business.GetUsers(type);
             return View(users);
         }
-        public ActionResult GetUserById(int UserId)
-        {
-            var business = new UsersBusiness();
-            var user = business.GetUserById(UserId);
-            return View(user);
-        }
+        //public ActionResult GetUserById(int UserId)
+        //{
+        //    var business = new UsersBusiness();
+        //    var user = business.GetUserById(UserId);
+        //    return View(user);
+        //}
         public ActionResult EditUser(int userId)
         {
             var user = new UsersBusiness().GetUserById(userId);
