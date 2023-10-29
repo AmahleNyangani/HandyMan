@@ -6,52 +6,83 @@
 
 <main class="main">
 
-       <div class="container-fluid">
-        <div class="card">
-            <div class="card-header">
-                <i class="fa fa-users"> Service Providers</i>
-            </div>
-      <div id="page-content-wrapper">
-       <div class="container-fluid">
-            <div class="table table-hover">
-                <div class="row">
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">Name</div>
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">Surname</div>
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">E-mail</div>
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">Service</div>
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">Rating</div>
-                    <div class="col-md-2 font-weight-bold d-none d-md-block">Details</div>
 
+<div aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Service Providers</a></li>
+  </ol>
+ </div>
+<br />
+            @if (Model.Any())
+       {
+
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-users"> Service Providers</i>
                 </div>
-                      @if (Model.Any())
+                <div id="page-content-wrapper">
+                    <div class="container-fluid">
+                        <div class="table table-hover">
+                            <div class="row">
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">Name</div>
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">Surname</div>
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">E-mail</div>
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">Service</div>
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">Rating</div>
+                                <div class="col-md-2 font-weight-bold d-none d-md-block">Details</div>
+
+                            </div>
+                            @if (Model.Any())
                             {
                                 foreach (var details in Model)
                                 {
-                        <div class="row">
-                            <div class="col-md-2">
-                                    @details.name
-                            </div>
-                            <div class="col-md-2">
-                                @details.surname
-                            </div>
-                            <div class="col-md-2">
-                                @details.email
-                            </div>
-                            <div class="col-md-2">
-                              @details.occupation
-                            </div>
-                            <div class="col-md-2">
-                              @details.position
-                            </div>
-                             <div class="col-md-2">
-                             <a href="@Url.Action("GetUserById", "Home")"> <i class="fa fa-exclamation-circle"></i></a>
-                            </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @details.name
+                                        </div>
+                                        <div class="col-md-2">
+                                            @details.surname
+                                        </div>
+                                        <div class="col-md-2">
+                                            @details.email
+                                        </div>
+                                        <div class="col-md-2">
+                                            @details.occupation
+                                        </div>
+                                        <div class="col-md-2">
+                                            @details.position
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="@Url.Action("EditUser", "Home", new { userId = "1" })"> <i style="color:#20a8d8" data-toggle="tooltip" data-placement="top" title="View Details" class="fa fa-exclamation-circle"></i></a>
+                                        </div>
 
+                                    </div>
+                                }
+                            }          
                         </div>
-             }
-             }
-            </div>
+           
          </div>
       </div>
    </div>
+   </div>
+      }
+      else
+        {
+            <div class="container-fluid">
+                <div class="card card-accent-primary">
+                    <div class="card-header">
+                        <span class="fa fa-exclamation-triangle"></span>
+                        <strong>Empty</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <span class="fa fa-info-circle"></span> No user(s) available!
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+        }
 </main>
