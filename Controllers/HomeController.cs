@@ -32,7 +32,7 @@ namespace HandyMan.Controllers
         {
             var business = new UsersBusiness();
             business.AddUser(model);
-            return RedirectToAction("Index", "Home");
+            return View();
         }
             public ActionResult GetUsers(string type)
         {
@@ -54,7 +54,7 @@ namespace HandyMan.Controllers
         public ActionResult UpdateUser(UsersViewModel model)
         {
             new UsersBusiness().UpdateUser(model);
-            return RedirectToAction("Index", "Home");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
