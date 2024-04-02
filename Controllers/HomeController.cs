@@ -46,11 +46,23 @@ namespace HandyMan.Controllers
         //    var user = business.GetUserById(UserId);
         //    return View(user);
         //}
-        public ActionResult EditUser(int userId)
+        public ActionResult ViewUserProfile(int userId)
         {
             var user = new UsersBusiness().GetUserById(userId);
             return  View(user);
         }
+        public ActionResult EditUser(int userId)
+        {
+            var user = new UsersBusiness().GetUserById(userId);
+            return View(user);
+        }
+        public ActionResult HireUser(CustomerViewModel model)
+        {
+            var business = new UsersBusiness();
+            business.HireUser(model);
+            return View();
+        }
+
         public ActionResult UpdateUser(UsersViewModel model)
         {
             new UsersBusiness().UpdateUser(model);

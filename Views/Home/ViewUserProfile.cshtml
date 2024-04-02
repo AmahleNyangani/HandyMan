@@ -1,0 +1,111 @@
+﻿@model HandyMan.ViewModel.UsersViewModel
+
+<main class="main">
+
+    <div aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Service Providers</a></li>
+    <li class="breadcrumb-item"><a href="#">Profile</a></li>
+
+  </ol>
+</div>
+<br />
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-edit">Profile</i>
+            </div>
+            <div class="card-body">
+               @using (Html.BeginForm("HireUser", "Home", FormMethod.Post, new { id = "id" }))
+        {
+                   
+                    <div class="form-horizontal">
+                      
+                        
+                        <div class="form-horizontal">
+                            
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.surname, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.surname, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.idNumber, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.idNumber, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                             <div class="form-group">
+                                @Html.LabelFor(model => model.gender, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.gender, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.occupation, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.occupation, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.organization, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.organization, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.position, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.position, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+                               <div class="form-group">
+                                @Html.LabelFor(model => model.comment, htmlAttributes: new { @class = "font-weight-bold" })
+                                @Html.EditorFor(model => model.comment, new { htmlAttributes = new { @class = "form-control"} })
+                            </div>
+
+
+                            <div class="form-group">
+                                <button id="submitButton" type="submit" class="btn btn-primary">Hire Provider</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</main>
