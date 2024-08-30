@@ -1,33 +1,43 @@
 ﻿@model HandyMan.ViewModel.UsersViewModel
 @{
-    ViewBag.Title = "Home Page";  
+    ViewBag.Title = "Handyman Services - Welcome";  
 }
+
 <main class="main">
-  
-<div aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
-  </ol>
-</div>
-<br />
-
-    <div class="container-fluid">
-        <div class="card">
-            <div class="card-header">
-                <i class="fa fa-home"> You Are At Home</i>
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <h1 class="display-4">Welcome to HandyMan Services</h1>
+                <p class="lead">Your trusted partner for home repairs and improvements.</p>
+                <a href="#services" class="btn btn-light btn-lg">Explore Our Services</a>
             </div>
-
-        <div class="card-body">
-     <div class= "Container">
-                <!-- banner -->
-        <div class="banner">
-            <div class="text">Hello!!  Welcome To</div>
-            <div class="text">HandyMan</div>
-            <a href="#" class="banner-btn">Read more</a>
         </div>
-       </div>
-    </div>
+    </header>
 
+    <section id="services" class="container text-center my-5">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h3>Plumbing</h3>
+                    <p>Expert plumbing services for any issue.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h3>Electrical</h3>
+                    <p>Reliable electrical repairs and installations.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h3>Painting</h3>
+                    <p>Professional painting services for a fresh look.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </main>
